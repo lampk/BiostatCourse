@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+  resources: data
+
+website:
+  title: "Workshop về Sinh thống kê"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Giới thiệu
+      - href: Note.qmd
+        text: Bài giảng
+
+format:
+  html:
+    theme: simplex
+    css: styles.css
+    toc: true
+
+editor: visual
+

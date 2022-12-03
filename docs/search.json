@@ -1,0 +1,373 @@
+[
+  {
+    "objectID": "Slide_Intro.html#savitz-da-wellenius-ga.-2022-mar-1kwac037.",
+    "href": "Slide_Intro.html#savitz-da-wellenius-ga.-2022-mar-1kwac037.",
+    "title": "Giới thiệu về Mô hình toán học trong bệnh truyền nhiễm",
+    "section": "Savitz DA, Wellenius GA. 2022 Mar 1;kwac037.",
+    "text": "Savitz DA, Wellenius GA. 2022 Mar 1;kwac037."
+  },
+  {
+    "objectID": "Slide_Intro.html#vấn-đề-của-nghiên-cứu-cắt-ngang",
+    "href": "Slide_Intro.html#vấn-đề-của-nghiên-cứu-cắt-ngang",
+    "title": "Giới thiệu về Mô hình toán học trong bệnh truyền nhiễm",
+    "section": "Vấn đề của nghiên cứu cắt ngang",
+    "text": "Vấn đề của nghiên cứu cắt ngang\n\nContemporaneous Exposure May Not Be Etiologically Relevant\nDisease Prevalence May Be a Poor Proxy for Disease Incidence\nThe Association between Exposure and Disease May Be Susceptible to Reverse Causality"
+  },
+  {
+    "objectID": "Slide_Intro.html#đã",
+    "href": "Slide_Intro.html#đã",
+    "title": "Giới thiệu về Mô hình toán học trong bệnh truyền nhiễm",
+    "section": "Đã",
+    "text": "Đã"
+  },
+  {
+    "objectID": "Note.html",
+    "href": "Note.html",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "",
+    "text": "Hình 1 giới thiệu tóm tắt chu trình thông thường khi thực hiện một nghiên cứu lâm sàng nói chung. Khởi đầu từ một vấn đề nghiên cứu, nhà nghiên cứu đặt ra một câu hỏi nghiên cứu cụ thể (thường theo cấu trúc PICO), trong đó xác định rõ dân số nghiên cứu đích (Population), can thiệp/yếu tố phơi nhiễm (Intervention/Exposure), nhóm chứng/nhóm so sánh (Comparison/Control), và kết cuộc quan tâm (Outcome). Để trả lời cho câu hỏi nghiên cứu này, nhà nghiên cứu sẽ thiết kế nghiên cứu, trong đó dân số nghiên cứu đích được cụ thể hoá bằng dân số chọn mẫu, và các yếu tố quan tâm được cụ thể hoá bằng các biến số nghiên cứu được định nghĩa rõ ràng. Với thiết kế này, nhà nghiên cứu sẽ tiến hành nghiên cứu, từ đó có được mẫu nghiên cứu thực tế, với dữ liệu thực tế thu thập được từ mẫu nghiên cứu. Từ mẫu nghiên cứu cụ thể này, nhà nghiên cứu sẽ phân tích dữ liệu để có được kết quả phân tích trong mẫu nghiên cứu, rồi từ đó suy diễn cho câu hỏi nghiên cứu trong mẫu nghiên cứu và câu hỏi nghiên cứu trong dân số đích ban đầu. Sự phù hợp giữa nghiên cứu thực tế với thiết kế nghiên cứu thể hiện giá trị bên trong của nghiên cứu; trong khi đó sự phù hợp giữa thiết kế nghiên cứu với câu hỏi nghiên cứu thể hiện giá trị bên ngoài của nghiên cứu. Cả hai loại giá trị này của nghiên cứu lâm sàng đều bị ảnh hưởng bởi sai lệch ngẫu nhiên và sai lệch hệ thống.\n\n\n\n\n\nHình 1. Chu trình nghiên cứu\n\n\n\n\nTrong chu trình nghiên cứu trên, mẫu nghiên cứu được lấy ra từ dân số nghiên cứu đích. Quá trình phân tích sẽ bao gồm hai giai đoạn:\n\nGiai đoạn 1: mô tả kết quả có được trong mẫu nghiên cứu\nGiai đoạn 2: suy diễn kết quả có được trong mẫu nghiên cứu cho dân số nghiên cứu đích\n\nSinh thống kê (biostatistics) là lĩnh vực nghiên cứu nhằm xây dựng và ứng dụng các phương pháp thống kê trong các chủ đề về sinh học và y học. Hai giai đoạn phân tích trên tương ứng với hai loại hình sinh thống kê với mục tiêu và công cụ sử dụng khác nhau:\n\nThống kê mô tả (descriptive biostatistics): mô tả kết quả có được trong mẫu nghiên cứu\nThống kê suy diễn (inferential biostatistics): suy diễn kết quả có được trong mẫu nghiên cứu cho dân số nghiên cứu đích"
+  },
+  {
+    "objectID": "Note.html#nội-dung",
+    "href": "Note.html#nội-dung",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "2 Nội dung",
+    "text": "2 Nội dung\n\nInfectious diseases and mathematical models.\nIntroduction to designing infectious disease models.\nThe herd effect in infectious disease epidemiology\nÝ nghĩa, ứng dụng và cách tính Ro, Rt. Dự đoán khi nào là đỉnh dịch, dịch sẽ kéo dài bao lâu, số người cảm nhiễm/tử vong. Sử dụng vẽ bằng excel."
+  },
+  {
+    "objectID": "Note.html#vì-sao-có-workshop-này",
+    "href": "Note.html#vì-sao-có-workshop-này",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "3 Vì sao có workshop này?",
+    "text": "3 Vì sao có workshop này?\nKhoá học “Introduction to mathematical models of the Epidemiology & Control of Infectious Diseases”\n\nSingapore, 13-16/10/2022\nMRC Centre for Global Infectious Disease Analysis (Imperial College London) & Lee\nKong Chian School of Medicine (Nanyang Technical University)\nGS Azra Ghani và cộng sự"
+  },
+  {
+    "objectID": "Note.html#bệnh-truyền-nhiễm-và-mô-hình-toán-học",
+    "href": "Note.html#bệnh-truyền-nhiễm-và-mô-hình-toán-học",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "4 Bệnh truyền nhiễm và mô hình toán học",
+    "text": "4 Bệnh truyền nhiễm và mô hình toán học\n\n4.1 Bệnh truyền nhiễm\nBệnh truyền nhiễm gây ra do sự lây truyền các tác nhân gây bệnh trong dân số cảm nhiễm. Các tác nhân gây bệnh truyền nhiễm rất đa dạng (virus, vi khuẩn, ký sinh trùng), và có nhiều cơ chế lây truyền khác nhau:\n\nKhí dung (aerosol)/giọt bắn (droplet) [sởi, quai bị, cúm, ho gà, …]\nPhân-miệng (faecal-oral)/môi trường [enterovirus, rotavirus, thương hàn, tả, …]\nQuan hệ tình dục [HIV, lậu, giang mai, chlamydia, …]\nVật trung gian (vectors/intermediate hosts) [dengue, sốt rét, onchocerciasis, schistosomiasis, …]\n\nTuy nhiên, kết quả cuối cùng rất giống nhau:\n\nTừ một/một vài người nhiễm ban đầu\nNgười/những người này sẽ lây nhiễm cho những người khác\nTạo thành chuỗi lây nhiễm, gia tăng số lượng người nhiễm bệnh, tạo ra một vụ dịch (epidemic)\n\nKhi một vụ dịch xảy ra, chúng ta sẽ muốn biết\n\nLiệu vụ dịch này có bùng phát thêm nữa hay không?\nVụ dịch này sẽ bùng phát nhanh như thế nào?\n\nĐể trả lời được câu hỏi này, chúng ta cần phải biết\n\nSố lượng ca nhiễm thứ phát từ một ca nhiễm nguyên phát ban đầu\nTốc độ xuất hiện các ca nhiễm thứ phát\n\n\n\n4.2 Hệ số lây nhiễm \\(R\\)\nHệ số lây nhiễm (Reproductive number, \\(R\\)) là số ca nhiễm trung bình từ một ca nhiễm điển hình ban đầu trong suốt khoảng thời gian lây bệnh của ca nhiễm đó.\nHệ số lây nhiễm cơ bản (Reproductive number, \\(R_0\\)) là số ca nhiễm trung bình từ một ca nhiễm điển hình ban đầu trong suốt khoảng thời gian lây bệnh của ca nhiễm đó, trong dân số hoàn toàn cảm nhiễm với bệnh (tại thời điểm dịch mới xuất hiện).\n\\(R_0\\) quan trọng vì:\n\n\\(R_0\\) giúp xác định:\n\nTốc độ lây truyền của bệnh trong cộng đồng\nNgưỡng cân bằng của vụ dịch\n“the age at which hosts acquire infection”\nMức độ can thiệp cần thiết để kiểm soát vụ dịch\n\nChúng ta có thể dùng \\(R_0\\) để\n\nĐánh giá liệu vụ dịch có đang được kiểm soát hay không\nHiểu về mức độ can thiệp cần thiết để kiểm soát hoàn toàn vụ dịch"
+  },
+  {
+    "objectID": "Note.html#giới-thiệu-về-thiết-kế-mô-hình-bệnh-truyền-nhiễm",
+    "href": "Note.html#giới-thiệu-về-thiết-kế-mô-hình-bệnh-truyền-nhiễm",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "5 Giới thiệu về thiết kế mô hình bệnh truyền nhiễm",
+    "text": "5 Giới thiệu về thiết kế mô hình bệnh truyền nhiễm"
+  },
+  {
+    "objectID": "Note.html#tác-dụng-quần-thể-trong-dịch-tễ-học-bệnh-truyền-nhiễm",
+    "href": "Note.html#tác-dụng-quần-thể-trong-dịch-tễ-học-bệnh-truyền-nhiễm",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "6 Tác dụng quần thể trong dịch tễ học bệnh truyền nhiễm",
+    "text": "6 Tác dụng quần thể trong dịch tễ học bệnh truyền nhiễm"
+  },
+  {
+    "objectID": "Note.html#hệ-số-lây-nhiễm-r-1",
+    "href": "Note.html#hệ-số-lây-nhiễm-r-1",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "7 Hệ số lây nhiễm (R)",
+    "text": "7 Hệ số lây nhiễm (R)\n\n7.1 Ý nghĩa\n\n\n7.2 Ứng dụng\n\n\n7.3 Cách tính\n\n\n7.4 Đánh giá diễn tiến dịch\n\n\n7.5 Ứng dụng trên Excel\n\n\n7.6 \n\nLý thuyếtVí dụBài tập\n\n\n\n\n\nGhi chú\n\n\nTRUE\n\n\n\n\n\n\n\nBài tập 1:\n\n\n\n\n A B C D\n\n\n\nXem giải thích\n\nGiải thích"
+  },
+  {
+    "objectID": "Note.html#quản-lý-dữ-liệu-nghiên-cứu",
+    "href": "Note.html#quản-lý-dữ-liệu-nghiên-cứu",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "8 Quản lý dữ liệu nghiên cứu",
+    "text": "8 Quản lý dữ liệu nghiên cứu\n\nLý thuyếtVí dụBài tập\n\n\n\n\n\nGhi chú\n\n\nTRUE\n\n\n\n\n\n\n\n\n\n\nGhi chú\n\n\nTRUE"
+  },
+  {
+    "objectID": "Note.html#tóm-tắt-1",
+    "href": "Note.html#tóm-tắt-1",
+    "title": "Giới thiệu về mô hình toán học trong dịch tễ học và kiểm soát bệnh truyền nhiễm",
+    "section": "9 Tóm tắt",
+    "text": "9 Tóm tắt"
+  },
+  {
+    "objectID": "Note.html#tài-liệu-tham-khảo",
+    "href": "Note.html#tài-liệu-tham-khảo",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "3 Tài liệu tham khảo",
+    "text": "3 Tài liệu tham khảo"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "about",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Note.html#giới-thiệu-về-thống-kê-trong-nghiên-cứu-lâm-sàng",
+    "href": "Note.html#giới-thiệu-về-thống-kê-trong-nghiên-cứu-lâm-sàng",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "1 Giới thiệu về thống kê trong nghiên cứu lâm sàng",
+    "text": "1 Giới thiệu về thống kê trong nghiên cứu lâm sàng\nHình 1 giới thiệu tóm tắt chu trình thông thường khi thực hiện một nghiên cứu lâm sàng nói chung. Khởi đầu từ một vấn đề nghiên cứu, nhà nghiên cứu đặt ra một câu hỏi nghiên cứu cụ thể (thường theo cấu trúc PICO), trong đó xác định rõ dân số nghiên cứu đích (Population), can thiệp/yếu tố phơi nhiễm (Intervention/Exposure), nhóm chứng/nhóm so sánh (Comparison/Control), và kết cuộc quan tâm (Outcome). Để trả lời cho câu hỏi nghiên cứu này, nhà nghiên cứu sẽ thiết kế nghiên cứu, trong đó dân số nghiên cứu đích được cụ thể hoá bằng dân số chọn mẫu, và các yếu tố quan tâm được cụ thể hoá bằng các biến số nghiên cứu được định nghĩa rõ ràng. Với thiết kế này, nhà nghiên cứu sẽ tiến hành nghiên cứu, từ đó có được mẫu nghiên cứu thực tế, với dữ liệu thực tế thu thập được từ mẫu nghiên cứu. Từ mẫu nghiên cứu cụ thể này, nhà nghiên cứu sẽ phân tích dữ liệu để có được kết quả phân tích trong mẫu nghiên cứu, rồi từ đó suy diễn cho câu hỏi nghiên cứu trong mẫu nghiên cứu và câu hỏi nghiên cứu trong dân số đích ban đầu. Sự phù hợp giữa nghiên cứu thực tế với thiết kế nghiên cứu thể hiện giá trị bên trong của nghiên cứu; trong khi đó sự phù hợp giữa thiết kế nghiên cứu với câu hỏi nghiên cứu thể hiện giá trị bên ngoài của nghiên cứu. Cả hai loại giá trị này của nghiên cứu lâm sàng đều bị ảnh hưởng bởi sai lệch ngẫu nhiên và sai lệch hệ thống.\n\n\n\n\n\nHình 1. Chu trình nghiên cứu\n\n\n\n\nTrong chu trình nghiên cứu trên, mẫu nghiên cứu được lấy ra từ dân số nghiên cứu đích. Quá trình phân tích sẽ bao gồm hai giai đoạn:\n\nGiai đoạn 1: mô tả kết quả có được trong mẫu nghiên cứu\nGiai đoạn 2: suy diễn kết quả có được trong mẫu nghiên cứu cho dân số nghiên cứu đích\n\nSinh thống kê (biostatistics) là lĩnh vực nghiên cứu nhằm xây dựng và ứng dụng các phương pháp thống kê trong các chủ đề về sinh học và y học. Hai giai đoạn phân tích trên tương ứng với hai loại hình sinh thống kê với mục tiêu và công cụ sử dụng khác nhau:\n\nThống kê mô tả (descriptive biostatistics): mô tả kết quả có được trong mẫu nghiên cứu\nThống kê suy diễn (inferential biostatistics): suy diễn kết quả có được trong mẫu nghiên cứu cho dân số nghiên cứu đích"
+  },
+  {
+    "objectID": "Note.html#thống-kê-mô-tả",
+    "href": "Note.html#thống-kê-mô-tả",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "2 Thống kê mô tả",
+    "text": "2 Thống kê mô tả\n\n2.1 Một số khái niệm\n\nNghiên cứu: mẫu lấy từ dân số\nBộ dữ liệu: cấu trúc chứa các quan sát có được từ một nghiên cứu\nQuan sát: giá trị của các biến số được đo lường trên một đơn vị nghiên cứu tại một thời điểm cụ thể\nBiến số: đặc tính có thể thay đổi giữa các đơn vị nghiên cứu khác nhau\n\n\n\n2.2 Cấu trúc dữ liệu\nPhần lớn thời gian của giai đoạn phân tích dữ liệu trên thực tế là dành cho việc làm sạch và chuẩn bị dữ liệu ở dạng phù hợp cho việc phân tích.\nMột bộ dữ liệu được xem là “gọn gàng” (tidy) khi1:\n\nMỗi quan sát tạo thành một dòng\nMỗi biến số tạo thành một cột\nMỗi loại quan sát tạo thành một bảng\nNếu có nhiều bảng, các bảng này được liên kết bằng một cột dữ liệu\n\n\n\n2.3 Biến số\nCó nhiều cách phân loại biến số:\n\nTính chất: Định tính/Định lượng\nVai trò: Độc lập/Phụ thuộc\n\nNăm 1946, nhà tâm lý học Stanley Smith Stevens đưa ra cách phân loại biến số dựa theo hàm lượng thông tin trong biến số2:\n\nDanh định (nominal): thuộc tính đo lường: phân loại, phân nhóm (giống, khác)\nThứ tự (ordinal): thuộc tính đo lường: so sánh, xếp thứ bậc (cao, thấp)\nKhoảng (interval): thuộc tính đo lường: chênh lệch (cộng, trừ)\nTỉ số (ratio): thuộc tính đo lường: độ lớn (nhân, chia)\n\nBiến số có bản chất định lượng thì hàm lượng thông tin sẽ bị mất đi khi biến biến số đó thành biến số phân nhóm. Do đó, không nên phân nhóm biến số định lượng, trừ phi có lý do/cơ sở rõ ràng cho việc phân nhóm.\nLưu ý rằng, khi dữ liệu được nhập liệu, các biến số phân nhóm thường được mã hoá bằng các con số; tuy nhiên điều này không có nghĩa rằng biến số đó là biến số định lượng.\n\n\n2.4 Mô tả biến số\nTrong thống kê mô tả, chúng ta sẽ mô tả sự phân bố của các biến số bằng hai loại công cụ là chỉ số thống kê mô tả và biểu đồ thống kê mô tả. Có nhiều dạng chỉ số và biểu đồ khác nhau, và việc lựa chọn chỉ số/biểu đồ phụ thuộc vào loại biến số mà chúng ta đang quan tâm.\n\nChỉ số thống kê mô tả\nĐối với biến số dạng phân nhóm, chỉ số mô tả bao gồm:\n\nTần số (frequency): giá trị tuyệt đối của số đối tượng trong từng phân nhóm của biến số.\nTỉ lệ phần trăm (proportion, percentage): giá trị tương đối (tỉ lệ) của từng phân nhóm so với tổng thể.\n\nĐối với biến số định lượng, sự phân bố của biến số cần được mô tả bằng hai thông số:\n\nVị trí tập trung (location): trung bình (mean), trung vị (median).\nĐộ phân tán (dispersion): độ lệch chuẩn (standard deviation), khoảng tứ phân vị (interquartile range), khoảng giá trị (range).\n\nTrung bình thường được mô tả kèm với độ lệch chuẩn, trong khi đó trung vị thường được mô tả kèm với khoảng tứ phân vị.\nTrung bình và độ lệch chuẩn thường được dùng khi biến số có phân bố cân xứng và không có các giá tri ngoại lai (giống với phân bố bình thường). Trung vị và khoảng tứ phân vị có thể dùng trong mọi trường hợp. Khi biến số có phân bố cân xứng, trung vị có giá trị gần bằng trung bình. Trung bình và độ lệch chuẩn bị ảnh hưởng bởi các giá trị ngoại lai, trong khi đó trung vị và khoảng tứ phân vị ít bị ảnh hưởng bởi các giá trị ngoại lai này.\n\nTrình bày chỉ số mô tả trong bảng\nBảng thường được sử dụng khi cần thông tin chính xác về dữ liệu.\nMột số nguyên tắc cần lưu ý khi trình bày bảng:\n\nCó tên với đầy đủ thông tin\nCó đơn vị (đối với biến số liên tục)\nSố chữ số thập phân: vừa phải, nhất quán\nGhi chú: chữ viết tắt, khái niệm chuyên môn\nKhông nên sử dụng gạch đứng, dùng gạch ngang khi cần thiết\nSắp xếp cột và hàng theo thứ tự (độ lớn, thời gian) khi cần thiết\n\n\n\n\nBiểu đồ thống kê mô tả\nĐối với biến số dạng phân nhóm:\n\nBiểu đồ điểm (dotplot)\nBiểu đồ cột (bar chart)\n\nĐối với biến số liên tục:\n\nTổ chức đồ (histogram)/Biểu đồ mật độ (density plot)\nBiểu đồ hộp (boxplot)\nBiểu đồ dạng RDI (pirateplot)\n\n\nTổ chức đồ (histogram)\nThường dùng để mô tả phân phối của một biến số liên tục.\nGiá trị của các biến số được nhóm lại vào các khoảng bằng nhau. Trục tung thể hiện tần số hoặc tỉ lệ như biểu đồ cột.\nTuy nhiên, hình dạng của tổ chức đồ bị ảnh hưởng lớn bởi cách phân nhóm dữ liệu (mặc định do phần mềm quyết định).\n\n\nBiểu đồ hộp (boxplot)\nBao gồm hình hộp chứa 50% giữa của dữ liệu, vạch tương ứng với trung vị, và phần râu tương ứng với các giá trị ít gặp (thường trong khoảng 1.5 lần khoảng tứ phân vị tính từ phân vị thứ 1 hoặc thứ 3).\n\n\nBiểu đồ dạng RDI\nBiểu đồ thể hiện cả dữ liệu thô (Raw data), các chỉ số mô tả (Descriptive statistics) và thông số suy diễn (Inferential statistics).\nGiúp thể hiện đầy đủ hơn thông tin trong dữ liệu.\n\n\nMột số nguyên tắc sử dụng biểu đồ\nBiểu đồ có giá trị trong mọi khâu của phân tích thống kê:\n\nKiểm tra và thăm dò dữ liệu\n\nTìm lỗi, dữ liệu bất thường\nKhám phá đặc tính, xây dựng giả thuyết\nLựa chọn phương pháp thống kê\n\nDiễn giải kết quả phân tích\nKiểm chứng phân tích\nTrình bày kết quả\n\nBiểu đồ thường ít được sử dụng hơn bảng. Việc tạo biểu đồ mất nhiều thời gian và công sức hơn bảng, do cần phải trải qua giai đoạn mã hoá dữ liệu dưới dạng các thuộc tính trực quan. Tuy nhiên, hiệu quả đem lại từ việc sử dụng biểu đồ có thể cao hơn bảng, do biểu đồ giúp người đọc nhận diện nhanh hơn về cấu trúc và so sánh.\n\n\n\n\n\nHình 2. Trình bày bằng bảng và biểu đồ\n\n\n\n\nBiểu đồ có các thành phần chính gồm:\n\nTên: tên biểu đồ, tên trục\nVật thể hình học: điểm, đường, cột\nThuộc tính thẩm mỹ: màu, kích thước, hình dạng, vị trí\nHệ trục toạ độ\n\nMột số nguyên tắc cần lưu ý khi trình bày bằng biểu đồ:\n\nCần rõ ràng, chính xác, hiệu quả\nLựa chọn cách mã hoá phù hợp tính chất của dữ liệu\nLưu ý sự khác biệt về hiệu quả sử dụng của các cách mã hoá khác nhau\n\n\n\n\n\n\nHình 3. Hiệu quả của các dạng mã hoá bằng hình ảnh khác nhau\n\n\n\n\n\n\n\n\n2.5 Tóm tắt\n\nSinh thống kê bao gồm hai lĩnh vực chính: thống kê mô tả và thống kê suy diễn.\nThống kê mô tả:\n\nMục tiêu: mô tả tóm tắt dữ liệu có trong mẫu mẫu nghiên cứu\nCông cụ: chỉ số và biểu đồ\n\nLựa chọn chỉ số và/hoặc biểu đồ phù hợp với mục tiêu, loại biến số."
+  },
+  {
+    "objectID": "Note.html#thống-kê-suy-diễn",
+    "href": "Note.html#thống-kê-suy-diễn",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "3 Thống kê suy diễn",
+    "text": "3 Thống kê suy diễn"
+  },
+  {
+    "objectID": "Note.html#kiểm-định-thống-kê",
+    "href": "Note.html#kiểm-định-thống-kê",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "4 Kiểm định thống kê",
+    "text": "4 Kiểm định thống kê"
+  },
+  {
+    "objectID": "Note.html#khoảng-tin-cậy-và-trị-số-p",
+    "href": "Note.html#khoảng-tin-cậy-và-trị-số-p",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "5 Khoảng tin cậy và trị số p",
+    "text": "5 Khoảng tin cậy và trị số p"
+  },
+  {
+    "objectID": "Note.html#tương-quan",
+    "href": "Note.html#tương-quan",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "6 Tương quan",
+    "text": "6 Tương quan"
+  },
+  {
+    "objectID": "Note.html#hồi-quy",
+    "href": "Note.html#hồi-quy",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "7 Hồi quy",
+    "text": "7 Hồi quy"
+  },
+  {
+    "objectID": "Note.html#phân-tích-số-liệu",
+    "href": "Note.html#phân-tích-số-liệu",
+    "title": "Sinh thống kê trong nghiên cứu lâm sàng",
+    "section": "8 Phân tích số liệu",
+    "text": "8 Phân tích số liệu"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Giới thiệu khoá học",
+    "section": "",
+    "text": "Nắm vững các khái niệm về sinh thống kê, thống kê mô tả, thống kê diễn dịch\nThực hiện được các phân tích thống kê mô tả và thống kê diễn dịch cơ bản\nDiễn giải được kết quả từ phân tích thống kê mô tả và thống kê diễn dịch\n\nCác buổi học: (diễn ra từ 15:00 đến 17:00)\n\n03/12/2022: Giới thiệu về sinh thống kê trong nghiên cứu lâm sàng - Phần 1\n08/12/2022: Giới thiệu về sinh thống kê trong nghiên cứu lâm sàng - Phần 2\n12/12/2022: Tương quan và mô hình hồi quy\n14/12/2022: Các bước phân tích số liệu trên thực tế\n\nPhương pháp\n\nBài giảng soạn sẵn\nThuyết trình slide\nBài tập thảo luận nhóm\nBài tập phân tích dữ liệu\nBài tập trên bài báo chọn trước\n\nDữ liệu sử dụng minh hoạ trong khoá học\n\nLink tải dữ liệu: https://doi.org/10.1371/journal.pntd.0005498.s003\nNguồn: Lam PK, Ngoc TV, Thu Thuy TT, et al. (2017) The value of daily platelet counts for predicting dengue shock syndrome: Results from a prospective observational study of 2301 Vietnamese children with dengue. PLoS Negl Trop Dis;11(4):e0005498.\n\nBài báo chọn trước\n\nShi L, Yuan X, Yao W, et al. (2022) Human mesenchymal stem cells treatment for severe COVID-19: 1-year follow-up results of a randomized, double-blind, placebo-controlled trial. eBioMedicine [Internet];75"
+  },
+  {
+    "objectID": "Slide_Intro.html#bài-tập-trình-bày-biểu-đồ",
+    "href": "Slide_Intro.html#bài-tập-trình-bày-biểu-đồ",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Bài tập trình bày biểu đồ",
+    "text": "Bài tập trình bày biểu đồ\nBạn có nhận xét gì về biểu đồ này?"
+  },
+  {
+    "objectID": "Slide_Intro.html#ứng-dụng",
+    "href": "Slide_Intro.html#ứng-dụng",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Ứng dụng",
+    "text": "Ứng dụng"
+  },
+  {
+    "objectID": "Slide_Intro.html#tóm-tắt",
+    "href": "Slide_Intro.html#tóm-tắt",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Tóm tắt",
+    "text": "Tóm tắt\n\nSinh thống kê bao gồm hai lĩnh vực chính: thống kê mô tả và thống kê suy diễn.\nThống kê mô tả:\n\nMục tiêu: mô tả tóm tắt dữ liệu có trong mẫu mẫu nghiên cứu\nCông cụ: chỉ số và biểu đồ\n\nLựa chọn chỉ số và/hoặc biểu đồ phù hợp với mục tiêu, loại biến số."
+  },
+  {
+    "objectID": "Slide_Intro.html#bài-tập-trình-bày-bảng",
+    "href": "Slide_Intro.html#bài-tập-trình-bày-bảng",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Bài tập trình bày bảng",
+    "text": "Bài tập trình bày bảng\nBạn có nhận xét gì về bảng này?"
+  },
+  {
+    "objectID": "Slide_Intro.html#một-số-nguyên-tắc-cần-lưu-ý-khi-trình-bày-bảng",
+    "href": "Slide_Intro.html#một-số-nguyên-tắc-cần-lưu-ý-khi-trình-bày-bảng",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Một số nguyên tắc cần lưu ý khi trình bày bảng:",
+    "text": "Một số nguyên tắc cần lưu ý khi trình bày bảng:\n\nCó tên với đầy đủ thông tin\nCó đơn vị (đối với biến số liên tục)\nSố chữ số thập phân: vừa phải, nhất quán\nGhi chú: chữ viết tắt, khái niệm chuyên môn\nKhông nên sử dụng gạch đứng, dùng gạch ngang khi cần thiết\nSắp xếp cột và hàng theo thứ tự (độ lớn, thời gian) khi cần thiết"
+  },
+  {
+    "objectID": "Slide_Intro.html#trình-bày-bằng-bảng-và-biểu-đồ",
+    "href": "Slide_Intro.html#trình-bày-bằng-bảng-và-biểu-đồ",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Trình bày bằng bảng và biểu đồ",
+    "text": "Trình bày bằng bảng và biểu đồ"
+  },
+  {
+    "objectID": "Slide_Intro.html#thành-phần-của-biểu-đồ",
+    "href": "Slide_Intro.html#thành-phần-của-biểu-đồ",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Thành phần của biểu đồ",
+    "text": "Thành phần của biểu đồ\n\nTên: tên biểu đồ, tên trục\nVật thể hình học: điểm, đường, cột\nThuộc tính thẩm mỹ: màu, kích thước, hình dạng, vị trí\nHệ trục toạ độ"
+  },
+  {
+    "objectID": "Slide_Intro.html#mã-hoá-bằng-hình-ảnh",
+    "href": "Slide_Intro.html#mã-hoá-bằng-hình-ảnh",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Mã hoá bằng hình ảnh",
+    "text": "Mã hoá bằng hình ảnh\nGiá trị nào lớn hơn?"
+  },
+  {
+    "objectID": "Slide_Intro.html#mã-hoá-bằng-hình-ảnh-1",
+    "href": "Slide_Intro.html#mã-hoá-bằng-hình-ảnh-1",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Mã hoá bằng hình ảnh",
+    "text": "Mã hoá bằng hình ảnh"
+  },
+  {
+    "objectID": "Slide_Intro.html#mã-hoá-bằng-hình-ảnh-2",
+    "href": "Slide_Intro.html#mã-hoá-bằng-hình-ảnh-2",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Mã hoá bằng hình ảnh",
+    "text": "Mã hoá bằng hình ảnh"
+  },
+  {
+    "objectID": "Slide_Intro.html#nguyên-tắc-cần-lưu-ý-khi-trình-bày-bằng-biểu-đồ",
+    "href": "Slide_Intro.html#nguyên-tắc-cần-lưu-ý-khi-trình-bày-bằng-biểu-đồ",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Nguyên tắc cần lưu ý khi trình bày bằng biểu đồ",
+    "text": "Nguyên tắc cần lưu ý khi trình bày bằng biểu đồ\n\nCần rõ ràng, chính xác, hiệu quả\nLựa chọn cách mã hoá phù hợp tính chất của dữ liệu\nLưu ý sự khác biệt về hiệu quả sử dụng của các cách mã hoá khác nhau"
+  },
+  {
+    "objectID": "Slide_Intro.html#chu-trình-thực-hiện-nghiên-cứu",
+    "href": "Slide_Intro.html#chu-trình-thực-hiện-nghiên-cứu",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Chu trình thực hiện nghiên cứu",
+    "text": "Chu trình thực hiện nghiên cứu"
+  },
+  {
+    "objectID": "Slide_Intro.html#sinh-thống-kê",
+    "href": "Slide_Intro.html#sinh-thống-kê",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Sinh thống kê",
+    "text": "Sinh thống kê"
+  },
+  {
+    "objectID": "Slide_Intro.html#các-khái-niệm-cơ-bản-1",
+    "href": "Slide_Intro.html#các-khái-niệm-cơ-bản-1",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Các khái niệm cơ bản",
+    "text": "Các khái niệm cơ bản\n\nNghiên cứu: mẫu lấy từ dân số\nBộ dữ liệu: cấu trúc chứa các quan sát có được từ một nghiên cứu\nQuan sát: giá trị của các biến số được đo lường trên một đơn vị nghiên cứu tại một thời điểm cụ thể\nBiến số: đặc tính có thể thay đổi giữa các đơn vị nghiên cứu khác nhau"
+  },
+  {
+    "objectID": "Slide_Intro.html#cấu-trúc-dữ-liệu",
+    "href": "Slide_Intro.html#cấu-trúc-dữ-liệu",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Cấu trúc dữ liệu",
+    "text": "Cấu trúc dữ liệu\nDữ liệu gọn gàng"
+  },
+  {
+    "objectID": "Slide_Intro.html#biến-số",
+    "href": "Slide_Intro.html#biến-số",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Biến số",
+    "text": "Biến số"
+  },
+  {
+    "objectID": "Slide_Intro.html#phân-phối-của-biến-số-1",
+    "href": "Slide_Intro.html#phân-phối-của-biến-số-1",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Phân phối của biến số",
+    "text": "Phân phối của biến số"
+  },
+  {
+    "objectID": "Slide_Intro.html#chỉ-số-mô-tả",
+    "href": "Slide_Intro.html#chỉ-số-mô-tả",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Chỉ số mô tả",
+    "text": "Chỉ số mô tả\nBiến số dạng phân nhóm:\n\nTần số (frequency)\nTỉ lệ phần trăm (proportion, percentage)\n\n\nBiến số liên tục:\n\nVị trí tập trung (location): trung bình (mean), trung vị (median).\nĐộ phân tán (dispersion): độ lệch chuẩn (standard deviation), khoảng tứ phân vị (interquartile range), khoảng giá trị (range)."
+  },
+  {
+    "objectID": "Slide_Intro.html#biểu-đồ-thống-kê-mô-tả",
+    "href": "Slide_Intro.html#biểu-đồ-thống-kê-mô-tả",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Biểu đồ thống kê mô tả",
+    "text": "Biểu đồ thống kê mô tả\nĐối với biến số dạng phân nhóm:\n\nBiểu đồ điểm (dotplot)\nBiểu đồ cột (bar chart)\n\n\nĐối với biến số liên tục:\n\nTổ chức đồ (histogram)/Biểu đồ mật độ (density plot)\nBiểu đồ hộp (boxplot)\nBiểu đồ dạng RDI (pirateplot)"
+  },
+  {
+    "objectID": "Slide_Intro.html#histogram",
+    "href": "Slide_Intro.html#histogram",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Histogram",
+    "text": "Histogram"
+  },
+  {
+    "objectID": "Slide_Intro.html#biểu-đồ-hộp",
+    "href": "Slide_Intro.html#biểu-đồ-hộp",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Biểu đồ hộp",
+    "text": "Biểu đồ hộp"
+  },
+  {
+    "objectID": "Slide_Intro.html#biểu-đồ-hộp-và-histogram",
+    "href": "Slide_Intro.html#biểu-đồ-hộp-và-histogram",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Biểu đồ hộp và histogram",
+    "text": "Biểu đồ hộp và histogram"
+  },
+  {
+    "objectID": "Slide_Intro.html#pirate-plot",
+    "href": "Slide_Intro.html#pirate-plot",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Pirate plot",
+    "text": "Pirate plot"
+  },
+  {
+    "objectID": "Slide_Intro.html#pirate-plot-1",
+    "href": "Slide_Intro.html#pirate-plot-1",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Pirate plot",
+    "text": "Pirate plot"
+  },
+  {
+    "objectID": "Slide_Intro.html#pirate-plot-rdi-plot",
+    "href": "Slide_Intro.html#pirate-plot-rdi-plot",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Pirate plot (RDI plot)",
+    "text": "Pirate plot (RDI plot)"
+  },
+  {
+    "objectID": "Slide_Intro.html#bài-tập",
+    "href": "Slide_Intro.html#bài-tập",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Bài tập",
+    "text": "Bài tập\nMô tả biến số giới tính:\nNam, Nữ, Nữ, Nữ, Nam, Nữ, Nam, Nữ, Nam, Nam, Nam, Nữ, Nam, Nữ, Nữ, Nữ, Nữ, Nữ, Nam, Nữ, Nam, Nam, Nam, Nữ"
+  },
+  {
+    "objectID": "Slide_Intro.html#bài-tập-1",
+    "href": "Slide_Intro.html#bài-tập-1",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Bài tập",
+    "text": "Bài tập\nMô tả biến số tuổi:\n60, 10, 70, 20, 40, 50, 30, 80, 90, 60, 10, 80, 20, 40, 20, 30, 80, 90"
+  },
+  {
+    "objectID": "Slide_Intro.html#bài-tập-2",
+    "href": "Slide_Intro.html#bài-tập-2",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Bài tập",
+    "text": "Bài tập\nMô tả biến số tuổi\n\n60, 10, 70, 20, 40, 50, 30, 80, 90\n\n\n52, 51, 47, 49, 54, 46, 52, 46, 53"
+  },
+  {
+    "objectID": "Slide_Intro.html#bài-tập-3",
+    "href": "Slide_Intro.html#bài-tập-3",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Bài tập",
+    "text": "Bài tập\nTính trung bình, độ lệch chuẩn, trung vị, khoảng tứ phân vị trong các trường hợp sau\n\n3, 5, 6, 7, 8\n\n\n3, 5, 6, 7, 80"
+  },
+  {
+    "objectID": "Slide_Intro.html#tóm-tắt-1",
+    "href": "Slide_Intro.html#tóm-tắt-1",
+    "title": "Giới thiệu về Sinh thống kê",
+    "section": "Tóm tắt",
+    "text": "Tóm tắt\n\nSinh thống kê bao gồm hai lĩnh vực chính: thống kê mô tả và thống kê suy diễn.\nThống kê mô tả:\n\nMục tiêu: mô tả tóm tắt dữ liệu có trong mẫu mẫu nghiên cứu\nCông cụ: chỉ số và biểu đồ\n\nLựa chọn chỉ số và/hoặc biểu đồ phù hợp với mục tiêu, loại biến số."
+  }
+]

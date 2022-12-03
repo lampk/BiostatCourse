@@ -1,0 +1,286 @@
+---
+title: "Giới thiệu về Sinh thống kê"
+subtitle: "Sinh thống kê trong nghiên cứu lâm sàng"
+author: "TS. BS. Phùng Khánh Lâm"
+date: "03/12/2022"
+institute: "Bộ môn Dịch tễ học, Khoa YTCC, ĐHYD TPHCM"
+format: 
+  revealjs:
+    theme: [default, css/lampk.scss]
+    slide-number: c/t
+    chalkboard: true
+    self-contained: false
+    preview-links: auto
+    scrollable: true
+    zoom: true
+    menu: false
+title-slide-attributes:
+  data-background-color: "#002147"
+  data-color: "#ffffff"
+  data-link-color: "#ffffff"
+  data-visibility: "uncounted"
+  data-text-align: "left"
+editor: source
+---
+
+```{r, include = FALSE}
+library(tidyverse)
+library(gt)
+library(gtExtras)
+```
+
+# Giới thiệu khoá học {data-background="#002147"}
+
+# Giới thiệu về sinh thống kê {data-background="#002147"}
+
+## Chu trình thực hiện nghiên cứu
+
+![](figures/DesignCR_01.png)
+
+## Sinh thống kê
+
+![](figures/Biostat_01.png)
+
+# Các khái niệm cơ bản {data-background="#002147"}
+
+## Các khái niệm cơ bản
+
+-   Nghiên cứu: mẫu lấy từ dân số
+
+-   Bộ dữ liệu: cấu trúc chứa các quan sát có được từ một nghiên cứu
+
+-   Quan sát: giá trị của các biến số được đo lường trên một đơn vị nghiên cứu tại một thời điểm cụ thể
+
+-   Biến số: đặc tính có thể thay đổi giữa các đơn vị nghiên cứu khác nhau
+
+## Cấu trúc dữ liệu
+
+Dữ liệu gọn gàng
+
+![](figures/Biostat_02.png)
+
+## Biến số
+
+![](figures/Biostat_03.png)
+
+# Phân phối của biến số {data-background="#002147"}
+
+## Phân phối của biến số
+
+![](figures/Biostat_06.png)
+
+## Bài tập
+
+Mô tả biến số giới tính:
+
+Nam, Nữ, Nữ, Nữ, Nam, Nữ, Nam, Nữ, Nam, Nam, Nam, Nữ, Nam, Nữ, Nữ, Nữ, Nữ, Nữ, Nam, Nữ, Nam, Nam, Nam, Nữ
+
+## Bài tập
+
+Mô tả biến số tuổi:
+
+60, 10, 70, 20, 40, 50, 30, 80, 90, 60, 10, 80, 20, 40, 20, 30, 80, 90
+
+# Các chỉ số mô tả {data-background="#002147"}
+
+## Chỉ số mô tả
+
+Biến số dạng phân nhóm:
+
+* Tần số (frequency)
+* Tỉ lệ phần trăm (proportion, percentage)
+
+. . .
+
+Biến số liên tục:
+
+* Vị trí tập trung (location): trung bình (mean), trung vị (median).
+* Độ phân tán (dispersion): độ lệch chuẩn (standard deviation), khoảng tứ phân vị (interquartile range), khoảng giá trị (range).
+
+## Bài tập
+
+Mô tả biến số tuổi
+
+. . .
+
+60, 10, 70, 20, 40, 50, 30, 80, 90
+
+. . .
+
+52, 51, 47, 49, 54, 46, 52, 46, 53
+
+## Bài tập
+
+Tính trung bình, độ lệch chuẩn, trung vị, khoảng tứ phân vị trong các trường hợp sau
+
+. . .
+
+3, 5, 6, 7, 8
+
+. . .
+
+3, 5, 6, 7, 80
+
+
+# Mô tả bằng bảng {data-background="#002147"}
+
+## Bài tập trình bày bảng
+
+Bạn có nhận xét gì về bảng này?
+
+::: {.r-stack}
+
+![](figures/TBDK_34.png){.fragment width=70%}
+
+![](figures/TBDK_35.png){.fragment width=70%}
+
+![](figures/TBDK_36.png){.fragment width=70%}
+
+![](figures/TBDK_37.png){.fragment width=70%}
+
+![](figures/TBDK_38.png){.fragment width=70%}
+
+![](figures/TBDK_39.png){.fragment width=70%}
+
+![](figures/TBDK_40.png){.fragment width=70%}
+
+![](figures/TBDK_41.png){.fragment width=70%}
+
+![](figures/TBDK_42.png){.fragment width=70%}
+
+![](figures/TBDK_43.png){.fragment width=70%}
+
+:::
+
+## Một số nguyên tắc cần lưu ý khi trình bày bảng:
+
+* Có tên với đầy đủ thông tin
+* Có đơn vị (đối với biến số liên tục)
+* Số chữ số thập phân: vừa phải, nhất quán
+* Ghi chú: chữ viết tắt, khái niệm chuyên môn
+* Không nên sử dụng gạch đứng, dùng gạch ngang khi cần thiết
+* Sắp xếp cột và hàng theo thứ tự (độ lớn, thời gian) khi cần thiết
+
+# Mô tả bằng biểu đồ {data-background="#002147"}
+
+## Biểu đồ thống kê mô tả
+
+Đối với biến số dạng phân nhóm:
+
+* Biểu đồ điểm (dotplot)
+* Biểu đồ cột (bar chart)
+
+. . .
+
+Đối với biến số liên tục:
+
+* Tổ chức đồ (histogram)/Biểu đồ mật độ (density plot)
+* Biểu đồ hộp (boxplot)
+* Biểu đồ dạng RDI (pirateplot)
+
+## Histogram
+
+![](figures/Biostat_04.png)
+
+## Biểu đồ hộp
+
+![](figures/Biostat_05.png)
+
+## Biểu đồ hộp và histogram
+
+![](figures/Biostat_07.png)
+
+## Pirate plot
+
+![](figures/Biostat_08.png)
+
+## Pirate plot
+
+![](figures/Biostat_09.png)
+
+## Pirate plot (RDI plot)
+
+![](figures/Biostat_10.png)
+
+## Trình bày bằng bảng và biểu đồ
+
+![](figures/TBDK_44.png){width=70%}
+
+## Thành phần của biểu đồ
+
+* Tên: tên biểu đồ, tên trục
+* Vật thể hình học: điểm, đường, cột
+* Thuộc tính thẩm mỹ: màu, kích thước, hình dạng, vị trí
+* Hệ trục toạ độ
+
+## Mã hoá bằng hình ảnh
+
+Giá trị nào lớn hơn?
+
+::: {.r-stack}
+
+![](figures/TBDK_24.png){.fragment width=70%}
+
+![](figures/TBDK_23.png){.fragment width=70%}
+
+![](figures/TBDK_22.png){.fragment width=70%}
+
+![](figures/TBDK_21.png){.fragment width=70%}
+
+![](figures/TBDK_20.png){.fragment width=70%}
+
+![](figures/TBDK_19.png){.fragment width=70%}
+
+:::
+
+## Mã hoá bằng hình ảnh
+
+![](figures/TBDK_16.png){width=70%}
+
+## Mã hoá bằng hình ảnh
+
+![](figures/TBDK_09.png){width=70%}
+
+## Bài tập trình bày biểu đồ
+
+Bạn có nhận xét gì về biểu đồ này?
+
+::: {.r-stack}
+
+![](figures/TBDK_01.png){.fragment width=70%}
+
+![](figures/TBDK_02.png){.fragment width=70%}
+
+![](figures/TBDK_03.png){.fragment width=70%}
+
+![](figures/TBDK_04.png){.fragment width=70%}
+
+![](figures/TBDK_05.png){.fragment width=70%}
+
+![](figures/TBDK_06.png){.fragment width=70%}
+
+![](figures/TBDK_07.png){.fragment width=70%}
+
+![](figures/TBDK_08.png){.fragment width=70%}
+
+:::
+
+## Nguyên tắc cần lưu ý khi trình bày bằng biểu đồ
+
+* Cần rõ ràng, chính xác, hiệu quả
+* Lựa chọn cách mã hoá phù hợp tính chất của dữ liệu
+* Lưu ý sự khác biệt về hiệu quả sử dụng của các cách mã hoá khác nhau
+
+# Ứng dụng {data-background="#002147"}
+
+# Tóm tắt {data-background="#002147"}
+
+## Tóm tắt 
+
+* Sinh thống kê bao gồm hai lĩnh vực chính: thống kê mô tả và thống kê suy diễn.
+* Thống kê mô tả: 
+    + Mục tiêu: mô tả tóm tắt dữ liệu có trong mẫu mẫu nghiên cứu
+    + Công cụ: chỉ số và biểu đồ
+* Lựa chọn chỉ số và/hoặc biểu đồ phù hợp với mục tiêu, loại biến số.
+
+

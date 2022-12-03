@@ -1,0 +1,209 @@
+---
+title: "Sinh thống kê trong nghiên cứu lâm sàng"
+author: "Phùng Khánh Lâm"
+date: "`r Sys.Date()`"
+language: vn.yml
+format: 
+  html:
+    css: [css/style.css, css/webex.css]
+    toc: true
+    toc-float: true
+    toc-depth: 2
+    number-sections: true
+    number-depth: 3
+    include-after-body: js/webex.js
+    self-contained: true
+bibliography: references.bib
+csl: the-new-england-journal-of-medicine.csl
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(gt)
+library(gtsummary)
+```
+
+## Giới thiệu về thống kê trong nghiên cứu lâm sàng
+
+Hình 1 giới thiệu tóm tắt chu trình thông thường khi thực hiện một nghiên cứu lâm sàng nói chung. Khởi đầu từ một vấn đề nghiên cứu, nhà nghiên cứu đặt ra một câu hỏi nghiên cứu cụ thể (thường theo cấu trúc PICO), trong đó xác định rõ dân số nghiên cứu đích (Population), can thiệp/yếu tố phơi nhiễm (Intervention/Exposure), nhóm chứng/nhóm so sánh (Comparison/Control), và kết cuộc quan tâm (Outcome). Để trả lời cho câu hỏi nghiên cứu này, nhà nghiên cứu sẽ thiết kế nghiên cứu, trong đó dân số nghiên cứu đích được cụ thể hoá bằng dân số chọn mẫu, và các yếu tố quan tâm được cụ thể hoá bằng các biến số nghiên cứu được định nghĩa rõ ràng. Với thiết kế này, nhà nghiên cứu sẽ tiến hành nghiên cứu, từ đó có được mẫu nghiên cứu thực tế, với dữ liệu thực tế thu thập được từ mẫu nghiên cứu. Từ mẫu nghiên cứu cụ thể này, nhà nghiên cứu sẽ phân tích dữ liệu để có được kết quả phân tích trong mẫu nghiên cứu, rồi từ đó suy diễn cho câu hỏi nghiên cứu trong mẫu nghiên cứu và câu hỏi nghiên cứu trong dân số đích ban đầu. Sự phù hợp giữa nghiên cứu thực tế với thiết kế nghiên cứu thể hiện giá trị bên trong của nghiên cứu; trong khi đó sự phù hợp giữa thiết kế nghiên cứu với câu hỏi nghiên cứu thể hiện giá trị bên ngoài của nghiên cứu. Cả hai loại giá trị này của nghiên cứu lâm sàng đều bị ảnh hưởng bởi sai lệch ngẫu nhiên và sai lệch hệ thống.
+
+```{r, fig.cap="Hình 1. Chu trình nghiên cứu", echo=FALSE}
+knitr::include_graphics("figures/DesignCR_01.png")
+```
+
+Trong chu trình nghiên cứu trên, mẫu nghiên cứu được lấy ra từ dân số nghiên cứu đích. Quá trình phân tích sẽ bao gồm hai giai đoạn:
+
+-   Giai đoạn 1: mô tả kết quả có được trong mẫu nghiên cứu
+
+-   Giai đoạn 2: suy diễn kết quả có được trong mẫu nghiên cứu cho dân số nghiên cứu đích
+
+Sinh thống kê (biostatistics) là lĩnh vực nghiên cứu nhằm xây dựng và ứng dụng các phương pháp thống kê trong các chủ đề về sinh học và y học. Hai giai đoạn phân tích trên tương ứng với hai loại hình sinh thống kê với mục tiêu và công cụ sử dụng khác nhau:
+
+-   Thống kê mô tả (descriptive biostatistics): mô tả kết quả có được trong mẫu nghiên cứu
+
+-   Thống kê suy diễn (inferential biostatistics): suy diễn kết quả có được trong mẫu nghiên cứu cho dân số nghiên cứu đích
+
+## Thống kê mô tả
+
+### Một số khái niệm
+
+-   Nghiên cứu: mẫu lấy từ dân số
+
+-   Bộ dữ liệu: cấu trúc chứa các quan sát có được từ một nghiên cứu
+
+-   Quan sát: giá trị của các biến số được đo lường trên một đơn vị nghiên cứu tại một thời điểm cụ thể
+
+-   Biến số: đặc tính có thể thay đổi giữa các đơn vị nghiên cứu khác nhau
+
+### Cấu trúc dữ liệu
+
+Phần lớn thời gian của giai đoạn phân tích dữ liệu trên thực tế là dành cho việc làm sạch và chuẩn bị dữ liệu ở dạng phù hợp cho việc phân tích.
+
+Một bộ dữ liệu được xem là "gọn gàng" (tidy) khi [@wickham_2014]:
+
+-   Mỗi quan sát tạo thành một dòng
+
+-   Mỗi biến số tạo thành một cột
+
+-   Mỗi loại quan sát tạo thành một bảng
+
+-   Nếu có nhiều bảng, các bảng này được liên kết bằng một cột dữ liệu
+
+### Biến số
+
+Có nhiều cách phân loại biến số:
+
+* Tính chất: Định tính/Định lượng
+* Vai trò: Độc lập/Phụ thuộc
+
+Năm 1946, nhà tâm lý học Stanley Smith Stevens đưa ra cách phân loại biến số dựa theo hàm lượng thông tin trong biến số [@stevensTheoryScalesMeasurement1946]:
+
+* Danh định (nominal): thuộc tính đo lường: phân loại, phân nhóm (giống, khác)
+* Thứ tự (ordinal): thuộc tính đo lường: so sánh, xếp thứ bậc (cao, thấp)
+* Khoảng (interval): thuộc tính đo lường: chênh lệch (cộng, trừ)
+* Tỉ số (ratio): thuộc tính đo lường: độ lớn (nhân, chia)
+
+Biến số có bản chất định lượng thì hàm lượng thông tin sẽ bị mất đi khi biến biến số đó thành biến số phân nhóm. Do đó, không nên phân nhóm biến số định lượng, trừ phi có lý do/cơ sở rõ ràng cho việc phân nhóm.
+
+Lưu ý rằng, khi dữ liệu được nhập liệu, các biến số phân nhóm thường được mã hoá bằng các con số; tuy nhiên điều này không có nghĩa rằng biến số đó là biến số định lượng.
+
+### Mô tả biến số
+
+Trong thống kê mô tả, chúng ta sẽ mô tả sự phân bố của các biến số bằng hai loại công cụ là chỉ số thống kê mô tả và biểu đồ thống kê mô tả. Có nhiều dạng chỉ số và biểu đồ khác nhau, và việc lựa chọn chỉ số/biểu đồ phụ thuộc vào loại biến số mà chúng ta đang quan tâm.
+
+#### Chỉ số thống kê mô tả
+
+Đối với biến số dạng phân nhóm, chỉ số mô tả bao gồm:
+
+-   Tần số (frequency): giá trị tuyệt đối của số đối tượng trong từng phân nhóm của biến số.
+
+-   Tỉ lệ phần trăm (proportion, percentage): giá trị tương đối (tỉ lệ) của từng phân nhóm so với tổng thể.
+
+Đối với biến số định lượng, sự phân bố của biến số cần được mô tả bằng hai thông số:
+
+-   Vị trí tập trung (location): trung bình (mean), trung vị (median).
+
+-   Độ phân tán (dispersion): độ lệch chuẩn (standard deviation), khoảng tứ phân vị (interquartile range), khoảng giá trị (range).
+
+Trung bình thường được mô tả kèm với độ lệch chuẩn, trong khi đó trung vị thường được mô tả kèm với khoảng tứ phân vị.
+
+Trung bình và độ lệch chuẩn thường được dùng khi biến số có phân bố cân xứng và không có các giá tri ngoại lai (giống với phân bố bình thường). Trung vị và khoảng tứ phân vị có thể dùng trong mọi trường hợp. Khi biến số có phân bố cân xứng, trung vị có giá trị gần bằng trung bình. Trung bình và độ lệch chuẩn bị ảnh hưởng bởi các giá trị ngoại lai, trong khi đó trung vị và khoảng tứ phân vị ít bị ảnh hưởng bởi các giá trị ngoại lai này.
+
+##### Trình bày chỉ số mô tả trong bảng
+
+Bảng thường được sử dụng khi cần thông tin chính xác về dữ liệu.
+
+Một số nguyên tắc cần lưu ý khi trình bày bảng:
+
+* Có tên với đầy đủ thông tin
+* Có đơn vị (đối với biến số liên tục)
+* Số chữ số thập phân: vừa phải, nhất quán
+* Ghi chú: chữ viết tắt, khái niệm chuyên môn
+* Không nên sử dụng gạch đứng, dùng gạch ngang khi cần thiết
+* Sắp xếp cột và hàng theo thứ tự (độ lớn, thời gian) khi cần thiết
+
+#### Biểu đồ thống kê mô tả
+
+Đối với biến số dạng phân nhóm:
+
+* Biểu đồ điểm (dotplot)
+* Biểu đồ cột (bar chart)
+
+Đối với biến số liên tục:
+
+* Tổ chức đồ (histogram)/Biểu đồ mật độ (density plot)
+* Biểu đồ hộp (boxplot)
+* Biểu đồ dạng RDI (pirateplot)
+
+##### Tổ chức đồ (histogram)
+
+Thường dùng để mô tả phân phối của một biến số liên tục.
+
+Giá trị của các biến số được nhóm lại vào các khoảng bằng nhau. Trục tung thể hiện tần số hoặc tỉ lệ như biểu đồ cột.
+
+Tuy nhiên, hình dạng của tổ chức đồ bị ảnh hưởng lớn bởi cách phân nhóm dữ liệu (mặc định do phần mềm quyết định).
+
+##### Biểu đồ hộp (boxplot)
+
+Bao gồm hình hộp chứa 50% giữa của dữ liệu, vạch tương ứng với trung vị, và phần râu tương ứng với các giá trị ít gặp (thường trong khoảng 1.5 lần khoảng tứ phân vị tính từ phân vị thứ 1 hoặc thứ 3).
+
+##### Biểu đồ dạng RDI 
+
+Biểu đồ thể hiện cả dữ liệu thô (Raw data), các chỉ số mô tả (Descriptive statistics) và thông số suy diễn (Inferential statistics).
+
+Giúp thể hiện đầy đủ hơn thông tin trong dữ liệu.
+
+##### Một số nguyên tắc sử dụng biểu đồ
+
+Biểu đồ có giá trị trong mọi khâu của phân tích thống kê:
+
+* Kiểm tra và thăm dò dữ liệu
+    + Tìm lỗi, dữ liệu bất thường
+    + Khám phá đặc tính, xây dựng giả thuyết
+    + Lựa chọn phương pháp thống kê
+    
+* Diễn giải kết quả phân tích
+* Kiểm chứng phân tích
+* Trình bày kết quả
+
+Biểu đồ thường ít được sử dụng hơn bảng. Việc tạo biểu đồ mất nhiều thời gian và công sức hơn bảng, do cần phải trải qua giai đoạn mã hoá dữ liệu dưới dạng các thuộc tính trực quan. Tuy nhiên, hiệu quả đem lại từ việc sử dụng biểu đồ có thể cao hơn bảng, do biểu đồ giúp người đọc nhận diện nhanh hơn về cấu trúc và so sánh.
+
+```{r, fig.cap="Hình 2. Trình bày bằng bảng và biểu đồ", echo=FALSE}
+knitr::include_graphics("figures/TBDK_44.png")
+```
+
+Biểu đồ có các thành phần chính gồm:
+
+* Tên: tên biểu đồ, tên trục
+* Vật thể hình học: điểm, đường, cột
+* Thuộc tính thẩm mỹ: màu, kích thước, hình dạng, vị trí
+* Hệ trục toạ độ
+
+Một số nguyên tắc cần lưu ý khi trình bày bằng biểu đồ:
+
+* Cần rõ ràng, chính xác, hiệu quả
+* Lựa chọn cách mã hoá phù hợp tính chất của dữ liệu
+* Lưu ý sự khác biệt về hiệu quả sử dụng của các cách mã hoá khác nhau
+
+```{r, fig.cap="Hình 3. Hiệu quả của các dạng mã hoá bằng hình ảnh khác nhau (https://blog.scottlogic.com/2017/06/29/change-presented-two-ways.html)", echo=FALSE}
+knitr::include_graphics("figures/TBDK_09.png")
+```
+
+### Tóm tắt
+
+* Sinh thống kê bao gồm hai lĩnh vực chính: thống kê mô tả và thống kê suy diễn.
+* Thống kê mô tả: 
+    + Mục tiêu: mô tả tóm tắt dữ liệu có trong mẫu mẫu nghiên cứu
+    + Công cụ: chỉ số và biểu đồ
+* Lựa chọn chỉ số và/hoặc biểu đồ phù hợp với mục tiêu, loại biến số.
+
+## Tài liệu tham khảo
+
+::: {#refs}
+:::
+
+<p><br><br></p>
+
+<!-- Print button -->
+
+<p><input type="button" value="In trang này" onClick="window.print()"></p>

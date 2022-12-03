@@ -1,0 +1,34 @@
+---
+title: "Giới thiệu khoá học"
+---
+
+Mục tiêu:
+
+* Nắm vững các khái niệm về sinh thống kê, thống kê mô tả, thống kê diễn dịch
+* Thực hiện được các phân tích thống kê mô tả và thống kê diễn dịch cơ bản
+* Diễn giải được kết quả từ phân tích thống kê mô tả và thống kê diễn dịch
+
+Các buổi học: (diễn ra từ 15:00 đến 17:00)
+
+* 03/12/2022: Giới thiệu về sinh thống kê trong nghiên cứu lâm sàng - Phần 1
+* 08/12/2022: Giới thiệu về sinh thống kê trong nghiên cứu lâm sàng - Phần 2
+* 12/12/2022: Tương quan và mô hình hồi quy
+* 14/12/2022: Các bước phân tích số liệu trên thực tế
+
+Phương pháp
+
+* Bài giảng soạn sẵn
+* Thuyết trình slide
+* Bài tập thảo luận nhóm
+* Bài tập phân tích dữ liệu
+* Bài tập trên bài báo chọn trước
+
+Dữ liệu sử dụng minh hoạ trong khoá học
+
+* Link tải dữ liệu: [https://doi.org/10.1371/journal.pntd.0005498.s003](https://doi.org/10.1371/journal.pntd.0005498.s003)
+* Nguồn: [Lam PK, Ngoc TV, Thu Thuy TT, et al. (2017) The value of daily platelet counts for predicting dengue shock syndrome: Results from a prospective observational study of 2301 Vietnamese children with dengue. PLoS Negl Trop Dis;11(4):e0005498.](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005498) 
+
+Bài báo chọn trước
+
+* [Shi L, Yuan X, Yao W, et al. (2022) Human mesenchymal stem cells treatment for severe COVID-19: 1-year follow-up results of a randomized, double-blind, placebo-controlled trial. eBioMedicine [Internet];75](https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(21)00583-1/fulltext)
+
