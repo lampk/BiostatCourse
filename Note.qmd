@@ -372,7 +372,7 @@ $$Y = b_0 + b_1 \times X_1 + b_2 \times X_2$$
 
 ## Các bước phân tích dữ liệu
 
-Quá trình phân tích dữ liệu không phải là một quá trình duy nhất mà thực tế gồm nhiều giai đoạn khác nhau (Hình). Có thể tạm chi quá trình phân tích dữ liệu thành 2 giai đoạn chính:
+Quá trình phân tích dữ liệu không phải là một quá trình duy nhất mà thực tế gồm nhiều giai đoạn khác nhau (Hình). Có thể tạm chia quá trình phân tích dữ liệu thành 2 giai đoạn chính:
 
 ```{r, fig.cap="Hình 7. Phân tích dữ liệu [@huebnerSystematicApproachInitial2016a]", echo=FALSE}
 knitr::include_graphics("figures/PTDL_01.jpg")
@@ -471,11 +471,6 @@ Một số video clip trên Youtube hướng dẫn các thao tác cơ bản trê
 * Mô tả biến số phân nhóm: [https://youtu.be/NBMAiLL-bVc](https://youtu.be/NBMAiLL-bVc)
 * Tính khoảng tin cậy cho một số trung bình hoặc một tỉ lệ: [https://youtu.be/RFcD_6cW-Ng](https://youtu.be/RFcD_6cW-Ng)
 * Kiểm định giả thuyết thống kê so sánh hai tỉ lệ: [https://youtu.be/02Wgne4fab0](https://youtu.be/02Wgne4fab0) 
-
-## Tài liệu tham khảo
-
-::: {#refs}
-:::
 
 <p><br><br></p>
 
