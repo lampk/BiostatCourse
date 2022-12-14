@@ -197,6 +197,281 @@ knitr::include_graphics("figures/TBDK_09.png")
     + Công cụ: chỉ số và biểu đồ
 * Lựa chọn chỉ số và/hoặc biểu đồ phù hợp với mục tiêu, loại biến số.
 
+## Thống kê suy diễn
+
+### Một số khái niệm
+
+* Dân số đích (target population): là dân số về lý thuyết với cỡ mẫu không giới hạn, bao gồm cả đối tượng nghiên cứu trong tương lai và ở các địa điểm khác. Được thể hiện qua tiêu chuẩn chọn vào/loại ra trong đề cương nghiên cứu. Khả năng khái quát hoá phụ thuộc vào cách lấy mẫu từ dân số đích.
+
+* Thông số (parameter): là các đặc tính của dân số đích mà nhà nghiên cứu quan tâm. Các đặc tính này có giá trị nhất định, nhưng không thể biết được giá trị này vì không thể khảo sát trên toàn bộ dân số đích.
+
+* Mẫu (sample): là một phần của dân số đích được chọn ra để khảo sát trong nghiên cứu. 
+
+* Chỉ số thống kê (statistics): là các đặc tính của mẫu mà nhà nghiên cứu đo lường được. Nhà nghiên cứu biết chỉ số thống kê trong mẫu nghiên cứu; tuy nhiên, khi lấy mẫu mới thì chỉ số thống kê này sẽ thay đổi chứ không hằng định như giá trị thông số của dân số (biến thiên do chọn mẫu, sampling variability).
+
+Trong thống kê suy diễn, chúng ta sẽ tìm cách ước lượng giá trị của các *thông số* trong **dân số** dựa vào các *chỉ số thống kê* từ **mẫu** nghiên cứu. 
+
+### Biến thiên do chọn mẫu (sampling variability)
+
+Kể cả khi mẫu đại diện cho dân số, do yếu tố ngẫu nhiên, chỉ số thống kê từ mẫu vẫn có thể khác với thông số của dân số, và khác với chỉ số thống kê được ước tính từ các mẫu khác được lấy với cùng phương pháp và kích thước.
+
+Khi lấy nhiều mẫu khác nhau từ cùng một dân số, sự biến thiên của chỉ số thống kê trong mẫu tuân theo quy luật: phân phối lấy mẫu.
+
+### Phân phối lấy mẫu (sampling distribution)
+
+Phân phối lấy mẫu thể hiện sự biến thiên của chỉ số thống kê trong mẫu khi lấy mẫu lặp lại nhiều lần. Vì trong thực tế, chúng ta không lấy mẫu nhiều lần, do đó phân phối lấy mẫu là một phân phối lý thuyết. Khi kích thước mẫu càng lớn, phân phối lấy mẫu của chỉ số thống kê sẽ tiệm cận phân phối bình thường (normal distribution). 
+
+Dựa vào phân phối lấy mẫu, chúng ta có thể lượng giá được sự sai lệch của ước lượng từ mẫu so với thông số của dân số. Độ lệch chuẩn của chỉ số thống kê trong phân phối lấy mẫu được gọi là sai số chuẩn (standard error). Sai số chuẩn giúp lượng giá độ chính xác khi dùng chỉ số thống kê từ mẫu để ước lượng cho thông số của dân số. Sai số chuẩn càng lớn thì ước lượng càng kém chính xác và ngược lại.
+
+Sai số chuẩn phụ thuộc vào hai yếu tố: sự biến thiên của biến số trong dân số (thể hiện qua độ lệch chuẩn của biến số) và kích thước mẫu. Do đó, sai số chuẩn có thể được ước tính dựa vào độ lệch chuẩn của biến số trong mẫu và cỡ mẫu:
+
+$$SE = \dfrac{SD}{\sqrt{n}}$$
+
+Lưu ý là sai số chuẩn của chỉ số thống kê từ biến số khác với độ lệch chuẩn của biến số:
+
+* Độ lệch chuẩn
+    + Thể hiện sự biến thiên của biến số trong mẫu
+    + Dùng trong thống kê mô tả để mô tả sự phân tán của dữ liệu
+
+* Sai số chuẩn
+    + Thể hiện độ chính xác của việc sử dụng chỉ số thống kê để ước lượng thông số trong dân số
+    + Dùng trong thống kê diễn dịch để đo lường độ chính xác của ước lượng.
+
+### Khoảng tin cậy
+
+Dựa vào phân phối lấy mẫu, chúng ta có thể đưa ra ước lượng khoảng cho giá trị của thông số trong dân số.
+
+Thông thường, khoảng tin cậy $95%$ của một thông số trong dân số được tính bằng công thức:
+
+$$\text{KTC 95%} = (\text{Ước lượng điểm} - 1.96 \times SE, \text{Ước lượng điểm} + 1.96 \times SE)$$
+Trong đó "Ước lượng điểm" là giá trị của chỉ số thống kê tính từ mẫu, và "SE" là sai số chuẩn khi sử dụng chỉ số thống kê này để ước tính cho thông số trong dân số.
+
+Một vài tính chất của khoảng tin cậy
+
+* Khoảng tin cậy thể hiện mức độ không chắc chắn về mặt thống kê khi ước lượng bằng chỉ số thống kê từ mẫu.
+* Khoảng tin cậy là ngẫu nhiên, thông số của dân số là hằng định (nhưng không biết)
+* Độ rộng của khoảng tin cậy phụ thuộc vào hai yếu tố: mức độ tin cậy ($90%$, $95%$, ...) và sai số chuẩn.
+
+Cách phiên giải hợp lý của khoảng tin cậy 95% (A, B) là với kết quả của nghiên cứu này, chúng ta có thể tin tưởng ở mức độ 95% rằng thông số của dân số đích là một trong các giá trị nằm trong khoảng (A, B). Lưu ý rằng, khi lặp đi lặp lại nghiên cứu 100 lần (với cùng cỡ mẫu), sẽ có 100 khoảng tin cậy 95% khác nhau và chúng ta mong đợi rằng có 95 khoảng tin cậy trong số đó sẽ chứa giá trị thông số của dân số đích.
+
+### Kiểm định giả thuyết thống kê
+
+Ngoài việc ước lượng, chúng ta có thể suy diễn về thông số trong dân số bằng cách kiểm định (bác bỏ hoặc chấp nhận) một giả thuyết về thông số trong dân số.
+
+Thông thường, chúng ta sẽ đưa ra giả thuyết muốn bác bỏ (null hypothesis, $H_0$) rồi thu thập dữ liệu và tìm cách bác bỏ giả thuyết đó.
+
+Việc bác bỏ hay chấp nhận giả thuyết $H_0$ sẽ đưa đến việc mắc phải sai lầm loại 1 hoặc sai lầm loại 2. Sai lầm loại 1 là sai lầm mắc phải khi bác bỏ $H_0$ mặc dù giả thuyết này đúng, đây cũng chính là ngưỡng có ý nghĩa thống kê mà chúng ta hay lựa chọn. Sai lầm loại 2 là sai lầm mắc phải khi chấp nhận $H_0$ mặc dù giả thuyết này sai, phần bù của sai lầm loại 2 là lực của nghiên cứu (power), hay khả năng bác bỏ được $H_0$ khi giả thuyết này sai.
+
+```{r, fig.cap="Hình 4. Sai lầm loại 1 và sai lầm loại 2", echo=FALSE}
+knitr::include_graphics("figures/hypothesis_23.png")
+```
+
+#### Các bước kiểm định giả thuyết
+
+Tất cả các phép kiểm định giả thuyết đều theo các bước chung:
+
+1. Xác định giả thuyết thống kê (giả thuyết không, $H_0$, nhằm bác bỏ)
+2. Thu thập dữ liệu
+3. Tính chỉ số thống kê của phép kiểm định
+4. Tính trị số p
+5. So sánh trị số p với một ngưỡng có ý nghĩa thống kê đã chọn trước và kết luận
+
+#### Trị số p
+
+Trị số p có thể được diễn giải nôm na là xác suất để quan sát được dữ liệu như đang có nếu giả thuyết không $H_0$ là đúng.
+
+Quyết định dựa vào trị số p:
+
+* So sánh với một ngưỡng ý nghĩa thống kê $\alpha$ chọn từ trước (thường là 0.05)
+* Khi trị số p $\leq \alpha$: dữ liệu không phù hợp với $H_0$, có cơ sở để bác bỏ giả thuyết $H_0$
+* Khi trị số p $> \alpha$: dữ liệu có thể phù hợp với $H_0$, chưa đủ cơ sở để bác bỏ giả thuyết không. Có thể do:
+    + Giả thuyết $H_0$ đúng
+    + Khác biệt thực tế giữa các nhóm không đáng kể
+    + Cỡ mẫu nhỏ
+
+#### Lựa chọn phép kiểm định thống kê
+
+Phụ thuộc vào:
+
+* Loại biến số phụ thuộc
+* Số lượng phân nhóm
+* Các nhóm độc lập/không độc lập
+
+#### Các phép kiểm định thống kê thường gặp
+
+```{r, fig.cap="Hình 5. Các phép kiểm định thống kê thường gặp", echo=FALSE}
+knitr::include_graphics("figures/hypothesis_12.png")
+```
+
+### Tương quan (correlation)
+
+Tương quan thể hiện mức độ mà các biến số liên tục thay đổi cùng nhau. Mức độ này được thể hiện qua hệ số tương quan (correlation coefficient). 
+
+Tính chất của hệ số tương quan:
+
+* Chỉ số có giá trị từ -1 đến 1
+* Đo lường mức độ hai biến số liên tục có mối quan hệ *tuyến tính* với nhau
+
+## Mô hình thống kê (Statistical models)
+
+### Mô hình hồi quy (regression models)
+
+Phương pháp phân tích, mô hình (phương trình) toán học, mô tả biến số phụ thuộc (y) theo một hoặc một vài biến số độc lập (x)
+
+```{r, fig.cap="Hình 6. Mô hình hồi quy", echo=FALSE}
+knitr::include_graphics("figures/Regression_01.png")
+```
+
+Mối liên hệ giữa biến số phụ thuộc và biến số độc lập được thể hiện qua hệ số hồi quy (regression coefficient)
+
+Mô hình hồi quy giúp:
+
+* Đánh giá liệu biến số độc lập và biến số phụ thuộc có liên quan với nhau hay không (so sánh hệ số hồi quy với 0)
+* Đánh giá mức độ liên quan giữa biến số độc lập và biến số phụ thuộc
+* Dự đoán giá trị của biến số phụ thuộc khi biết giá trị của biến số độc lập.
+
+### Hồi quy tuyến tính đơn biến (univariable regression) vs. hồi quy tuyến tính đa biến (multivariable regression)
+
+* Hồi quy đơn biến
+
+$$Y = b_0 + b_1 \times X$$
+
+    
+  Hệ số $b_1$ thể hiện sự thay đổi của Y khi X tăng lên một đơn vị
+    
+* Hồi quy đa biến
+
+$$Y = b_0 + b_1 \times X_1 + b_2 \times X_2$$
+
+    
+  Hệ số $b_1$ thể hiện sự thay đổi của Y khi $X_1$ tăng lên một đơn vị và $X_2$ giữ nguyên.
+    
+### Lựa chọn mô hình hồi quy
+
+* Phụ thuộc vào biến số phụ thuộc:
+    + Biến số liên tục: hồi quy tuyến tính (linear regression)
+    + Biến số nhị giá: Hồi quy logistic (logistic regression)
+    + Biến số dạng số đếm: Hồi quy Poisson (Poisson regression)
+    + Biến số dạng thời gian sống còn: Hồi quy Cox (Cox regression)
+    
+* Lựa chọn biến số cho mô hình hồi quy đa biến
+    + Bao gồm: biến số phụ thuộc (là kết cuộc quan tâm), biến số độc lập là các yếu tố độc lập quan tâm (từ kiến thức lâm sàng, y văn) và các yếu tố gây nhiễu (từ kiến thức lâm sàng, y văn)
+    + Số lượng biến số độc lập bị giới hạn bởi cỡ mẫu và biến số phụ thuộc
+    
+### Mô hình hồi quy vs. kiểm định thống kê
+
+* Kiểm định thống kê
+    + Bác bỏ hoặc chấp nhận giả thuyết thống kê (thông qua trị số p)
+    + Chỉ khảo sát được hai biến số, không cho phép hiệu chỉnh cho các yếu tố gây nhiễu.
+    
+* Mô hình thống kê
+    + Bác bỏ hoặc chấp nhận giả thuyết thống kê (thông qua trị số p khi kiểm định hệ số hồi quy)
+    + Đánh giá được độ lớn của mối liên hệ (qua hệ số hồi quy và khoảng tin cậy của hệ số hồi quy)
+    + Khảo sát được nhiều biến số (hồi quy đa biến), cho phép hiệu chỉnh cho các yếu tố gây nhiễu
+    + Nhiều thông tin hơn nhưng cũng nhiều giả định hơn (phương trình hồi quy phải phù hợp, phân phối của biến số phụ thuộc phải phù hợp)
+
+## Các bước phân tích dữ liệu
+
+Quá trình phân tích dữ liệu không phải là một quá trình duy nhất mà thực tế gồm nhiều giai đoạn khác nhau (Hình). Có thể tạm chi quá trình phân tích dữ liệu thành 2 giai đoạn chính:
+
+```{r, fig.cap="Hình 7. Phân tích dữ liệu [@huebnerSystematicApproachInitial2016a]", echo=FALSE}
+knitr::include_graphics("figures/PTDL_01.jpg")
+```
+
+* Giai đoạn ban đầu: nhằm làm quen với bộ dữ liệu và chuẩn bị bộ dữ liệu sẵn sàng cho phân tích chính thức. Quá trình này có thể được chia thành hai giai đoạn nhỏ hơn:
+    + Kiểm tra và làm sạch dữ liệu: mục tiêu là tạo ra bộ dữ liệu với số sai sót tối thiểu
+    + Chuẩn bị dữ liệu cho phân tích thực sự: tạo ra bộ dữ liệu với định dạng phù hợp cho phân tích
+    
+* Giai đoạn phân tích thực sự: thực hiện các phân tích theo kế hoạch phân tích có sẵn
+
+Theo ý kiến của nhiều chuyên gia phân tích nhiều kinh nghiệm, thông thường 80% thời gian của quá trình phân tích là dành cho giai đoạn ban đầu [@huebnerSystematicApproachInitial2016a].
+
+### Giai đoạn ban đầu
+
+#### Kiểm tra và làm sạch dữ liệu
+
+Để kết quả phân tích chính xác và đáng tin cậy, dữ liệu dùng để phân tích cần phải sạch về các lỗi.
+
+```{r, fig.cap="Hình 8. Kiểm tra và làm sạch dữ liệu dữ liệu", echo=FALSE}
+knitr::include_graphics("figures/PTDL_02.png")
+```
+
+Mục tiêu của giai đoạn này là xây dựng bộ dữ liệu sạch (ít lỗi nhất có thể) cho phân tích.
+
+Các dạng lỗi thường gặp là: 
+
+* Dữ liệu bị thiếu/mất 
+* Dữ liệu bị lặp lại
+* Các giá trị ngoại lai
+* Các giá trị không tương hợp 
+
+Để tìm ra các lỗi này, chúng ta có thể dựa vào các công cụ của thống kê mô tả (bằng số tóm tắt, biểu đồ) để mô tả từng biến số và/hoặc một nhóm biến số cùng nhau. Các giá trị ngoài mong đợi (phân nhóm khác với định nghĩa biến số, giá trị ngoại lai) thường dễ được phát hiện. Những lỗi mà giá trị vẫn nằm trong khoảng giá trị mong đợi thì khó phát hiện hơn, và chỉ có thể được phát hiện khi kiểm tra ngẫu nhiên một phần trong bộ dữ liệu.
+
+Sau khi tìm được lỗi, chúng ta cần chẩn đoán lỗi và phân loại chúng thành:
+
+* Lỗi thực sự: cần phải sửa hoặc xoá nếu không sửa được.
+* Không phải lỗi: giữ nguyên, không chỉnh sửa.
+* Không chắc: giữ nguyên, cân nhắc phân tích bổ sung (sensitivity analysis) sau đó.
+
+Để chẩn đoán được lỗi, chúng ta cần dựa vào kiến thức chuyên môn về các biến số, và các bằng chứng khác nhau để chứng minh lỗi.
+
+Đối với các lỗi thực sự thì cần sửa lỗi, hoặc xoá đi nếu không biết được giá trị chính xác. Tuy nhiên, mọi thay đổi trong bộ dữ liệu đều phải được ghi nhận lại, đồng thời cập nhật thay đổi trong bộ dữ liệu gốc.
+
+```{r, fig.cap="Hình 9. Kiểm tra và làm sạch dữ liệu dữ liệu [@broeckDataCleaningDetecting2005]", echo=FALSE}
+knitr::include_graphics("figures/PTDL_03.png")
+```
+
+#### Chuẩn bị dữ liệu cho phân tích
+
+Để phân tích được hiệu quả (nhanh chóng, chính xác), bộ dữ liệu phân tích không chỉ cần sạch mà còn cần ở định dạng phù hợp cho phân tích.
+
+Mục tiêu của giai đạon này là chuẩn bị bộ dữ liệu phù hợp cho phân tích.
+
+Các thao tác chính trong giai đoạn này bao gồm:
+
+* Tạo thêm các biến số mới
+    + Tạo thêm các biến số mới dựa trên các biến số sẵn có
+    + Định dạng lại biến số
+    + Phân nhóm biến số
+
+* Chuyển dạng dữ liệu cho phù hợp với phân tích
+    + Kết hợp các bảng dữ liệu với nhau
+    + Dữ liệu dạng dài hay rộng
+
+### Giai đoạn phân tích thực sự
+
+Sau khi đã có bộ dữ liệu sạch và ở định dạng phù hợp, chúng ta có thể tiến hành giai đoạn phân tích thực sự. Ở giai đoạn này, để việc phân tích được hiệu quả, khách quan và hạn chế nguy cơ các kết quả có được do ngẫu nhiên, nhà phân tích không nên phân tích một cách ngẫu hứng mà cần dựa vào một kế hoạch phân tích đã được soạn sẵn. 
+
+Cấu trúc thông thường của một kế hoạch phân tích có thể bao gồm các phần như sau:
+
+* Thông tin cơ bản: người viết, ngày viết, phiên bản
+* Mục tiêu của phân tích
+* Nguồn dữ liệu, chuẩn bị dữ liệu
+* Công cụ phân tích
+* Phương pháp phân tích cho từng mục tiêu
+    + Dân số phân tích
+    + Các biến số liên quan & định nghĩa
+    + Phương pháp phân tích: Mô tả/Mô hình/kiểm định
+    + Các vấn đề khác: dữ liệu bị mất, sensitivity analysis
+* Bảng/hình câm, phụ lục
+* Tài liệu tham khảo
+
+## Công cụ phân tích dữ liệu
+
+JASP (Jeffreys’s Amazing Statistics Program) là một phần mềm phân tích thống kê mã nguồn mở, miễn phí, được phát triển và duy trì bởi một nhóm nghiên cứu về tâm lý học tại Đại học Amsterdam (Hà Lan). Phần mềm này dựa trên phần mềm R chạy ẩn sau mỗi lệnh trên tác vụ. 
+
+* Website của phần mềm: [https://jasp-stats.org/](https://jasp-stats.org/)
+* Địa chỉ tải phần mềm: [https://jasp-stats.org/download/](https://jasp-stats.org/download/)
+* Các tài liệu hướng dẫn sử dụng: [https://jasp-stats.org/jasp-materials/](https://jasp-stats.org/jasp-materials/)
+
+Một số video clip trên Youtube hướng dẫn các thao tác cơ bản trên JASP:
+
+* Đọc dữ liệu: [https://youtu.be/Q0OF4ATtZ3k](https://youtu.be/Q0OF4ATtZ3k)
+* Mô tả biến số liên tục: [https://youtu.be/-5zCz5Qhbnc](https://youtu.be/-5zCz5Qhbnc)
+* Mô tả biến số phân nhóm: [https://youtu.be/NBMAiLL-bVc](https://youtu.be/NBMAiLL-bVc)
+* Tính khoảng tin cậy cho một số trung bình hoặc một tỉ lệ: [https://youtu.be/RFcD_6cW-Ng](https://youtu.be/RFcD_6cW-Ng)
+* Kiểm định giả thuyết thống kê so sánh hai tỉ lệ: [https://youtu.be/02Wgne4fab0](https://youtu.be/02Wgne4fab0) 
+
 ## Tài liệu tham khảo
 
 ::: {#refs}
